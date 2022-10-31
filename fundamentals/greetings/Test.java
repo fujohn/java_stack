@@ -179,6 +179,30 @@ public class Test {
             // other operations using name
         }
 
+        import java.util.HashMap;
+        HashMap<String, String> userMap = new HashMap<String, String>();
+        userMap.put("nninja@codingdojo.com", "Nancy Ninja");
+        userMap.put("ssamurai@codingdojo.com", "Sam Samurai");
+        String name = userMap.get("nninja@codingdojo.com");
+        Set<String> keys = userMap.keySet();
+        for(String key : keys) {
+            System.out.println(key);
+            System.out.println(userMap.get(key));    
+        }
+        // You can do a quite a bit more with HashMaps. 
+        // Some of the most common used methods are 
+        // clear, containsKey, containsValue,isEmpty, keySet, remove, replace, 
+        // size, values. 
+        // Try these out to see what you can do with HashMaps.
+
+        UnreliableFriend friend = new UnreliableFriend();
+        try{
+            friend.deliverMessage();
+            System.out.println("The message was delivered!");
+        } catch (OutOfGasException e){
+            System.out.println("Hey, uh, so, I ran out of gas..");
+            // back-up plan here.
+        }
 
 
 
