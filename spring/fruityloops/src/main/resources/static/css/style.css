@@ -1,0 +1,12 @@
+@charset "ISO-8859-1";
+body {
+	width: 60%;
+	margin: 0px auto;
+}
+h1 {
+	color: #FFB6C2;
+}
+
+table.table {
+	border: 30px solid #FFB6C2;
+}
