@@ -19,7 +19,7 @@
     	
     </head>
 <body>
-    <h1>Hello World!</h1>
+    <h1>Hello <c:out value="${name}"/>!</h1>
     <!-- Inserting a for loop into your jsp -->
     <% for(int i = 0; i < 5; i++) { %>
         <h1><%= i %></h1>
