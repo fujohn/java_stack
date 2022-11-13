@@ -8,7 +8,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Omikuji</title>
+	<title>Omikuji</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
 	<h1>Here's Your Omikuji!</h1>

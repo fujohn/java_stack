@@ -1,0 +1,51 @@
+body {
+	width: 40%;
+	margin: 0px auto;
+	display:flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+h1, p {
+	font-size: 30px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+a {
+	margin: 10px auto;
+}
+
+div {
+	background-color: #9FC5F8;
+	border: 3px solid;
+	margin-bottom: 10px;
+	padding: 30px;
+	width: 50%;
+	margin: 10px auto;
+}
+
+form {
+	width: 50%;
+	margin: 10px auto;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	border: 2px solid gray;
+}
+
+input {
+	width: 60%;
+	margin-bottom: 10px;
+}
+
+textarea{
+	margin-bottom: 10px;
+}
+
+span {
+	margin-top:30px;
+	display:flex;
+	justify-content: flex-end;
+}

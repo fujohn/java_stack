@@ -4,18 +4,18 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class OmikujiController {
-	@GetMapping("/") // default page redirect
+	@RequestMapping("/") // default page redirect
 	public String index() {
 		return "redirect:/omikuji";
 	}
 	
-	@GetMapping("/omikuji")
+	@RequestMapping("/omikuji")
 	public String omikuji() {
 		return "form.jsp";
 	}
@@ -34,7 +34,8 @@ public class OmikujiController {
 		return "redirect:/omikuji/show";
 	}
 	
-	@GetMapping("/omikuji/show")
+	
+	@RequestMapping("/omikuji/show")
 	public String show(HttpSession session, Model model) {
 		String omikujiMessage = (String) session.getAttribute("okimuji");
 		model.addAttribute("omikuji", omikujiMessage);

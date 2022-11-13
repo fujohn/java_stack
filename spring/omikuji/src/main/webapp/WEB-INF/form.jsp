@@ -4,7 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Omikuji</title>
+	<title>Omikuji</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
 	<h1>Send an Omikuji!</h1>
@@ -21,7 +22,8 @@
 	<input type="text" name="livingThing">
 	<label for="message">Say something nice to someone.</label>
 	<textarea name="message" cols="30" rows="10"></textarea>
-	<input type="submit" value="Send">
+	Send and show a friend
+	<span><button>Send</button></span>
 	</form>
 </body>
 </html>
