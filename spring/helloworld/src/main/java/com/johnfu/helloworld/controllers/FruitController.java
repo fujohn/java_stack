@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 public class FruitController {
@@ -63,11 +64,18 @@ public class FruitController {
     @PostMapping("/login") //POST request, should redirect (see next mapping)
     public String login(@RequestParam(value="email") String email, 
     		@RequestParam(value="password") String password, 
-    		HttpSession session) {
+    		HttpSession session,
+    		RedirectAttributes redirectAttributes) {
         
+    		if (password.length() < 5) {
+    			redirectAttributes.addFlashAttribute("error", "Password must be at least 5 characters long.");
+    			return "redirect:/form";
+    		} else {
+    			session.setAttribute("email", email);
+            	return "redirect:/home"; // <-- we'll change this when we learn redirecting
+    		}
         	// CODE TO PROCESS FORM ie. check email and password
-        	session.setAttribute("email", email);
-        	return "redirect:/home"; // <-- we'll change this when we learn redirecting
+        	
     }
     
     @RequestMapping("/home")
