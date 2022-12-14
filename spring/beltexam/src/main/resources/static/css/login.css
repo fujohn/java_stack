@@ -1,0 +1,29 @@
+form div {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 10px 0px;
+}
+
+h2, h1 {
+	text-align: center;	
+}
+
+body {
+	width: 70%;
+	margin: 0px auto;
+}
+
+label, .form-group input {
+	width: 50%;
+}
+
+input {
+	width: 100%;
+}
+
+main > div {
+	margin: 20px 0px;
+	padding: 10px;
+	border: 1px solid black;
+}
+

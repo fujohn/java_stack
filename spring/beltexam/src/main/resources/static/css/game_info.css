@@ -1,0 +1,16 @@
+body {
+	width: 80%;
+	margin: 0px auto;
+}
+
+header {
+	margin-bottom: 30px;
+}
+
+footer {
+	display: flex;
+}
+
+footer a {
+	margin-right: 5px;
+}

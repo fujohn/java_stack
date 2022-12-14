@@ -1,0 +1,35 @@
+body {
+	width: 80%;
+	margin: 0px auto;
+}
+
+header {
+	margin-bottom: 30px;
+}
+
+form div {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 10px 0px;
+}
+
+input {
+	width: 100%;
+}
+
+
+
+label, .form-group input, .form-group textarea {
+	width: 50%;
+}
+
+main {
+	width: 90%;
+	margin: 0px auto;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+textarea {
+	height: 200px;
+}
